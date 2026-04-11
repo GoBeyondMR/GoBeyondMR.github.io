@@ -1,15 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Jekyll-like Site</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        /* Gradient Header */
+        header {
+            background: linear-gradient(90deg, #6a4f8a, #3e51b1);
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(58, 128, 211, 0.8), rgba(106, 79, 138, 0.8)), url('background-image.jpg');
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+            color: #fff;
+        }
+        .cta-buttons {
+            margin-top: 20px;
+        }
+        .cta-buttons button {
+            background: #3e51b1;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .cta-buttons button:hover {
+            background: #6a4f8a;
+        }
+        /* About Section */
+        .about {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        /* Features Section */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 20px;
+        }
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+        }
+        /* Contact Section */
+        .contact {
+            padding: 50px 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <div><a href="#">Home</a></div>
+            <div><a href="#about">About</a></div>
+            <div><a href="#features">Features</a></div>
+            <div><a href="#contact">Contact</a></div>
+        </nav>
+    </header>
 
-  <h1>It works 🎉</h1>
-  <p>If you see this, your site is working.</p>
+    <section class="hero">
+        <h1>Welcome to My Site</h1>
+        <div class="cta-buttons">
+            <button>Get Started</button>
+            <button>Learn More</button>
+        </div>
+    </section>
 
-  <a href="https://www.google.com">Go to Google</a>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>This is an example about section.</p>
+    </section>
 
+    <section id="features" class="features">
+        <div class="feature-card">
+            <h3>Modern Design</h3>
+            <p>Beautiful and engaging layout.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Fast & Efficient</h3>
+            <p>Quick loading times and performance.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Easy to Customize</h3>
+            <p>Simple to adjust to your needs.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@example.com</p>
+    </section>
 </body>
 </html>
